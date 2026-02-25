@@ -153,7 +153,7 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
-  base: "/",
+  base: process.env.NODE_ENV === "production" ? "/WorksShops/" : "/",
   plugins,
   resolve: {
     alias: {
