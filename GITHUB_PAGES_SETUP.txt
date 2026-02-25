@@ -1,0 +1,41 @@
+# ⚡ Quick Setup - GitHub Pages em 3 Passos
+
+## 1️⃣ Habilitar GitHub Pages
+
+- Vá para seu repositório no GitHub
+- **Settings** → **Pages**
+- Selecione: **GitHub Actions** como source
+- Clique em **Save**
+
+## 2️⃣ Se for repositório de projeto (não pessoal)
+
+Se seu repo é `seu-usuario/infinity-school-lp`:
+
+Edite `vite.config.ts` e adicione `base`:
+
+```typescript
+export default defineConfig({
+  plugins,
+  base: '/infinity-school-lp/',  // 👈 Nome do seu repositório
+  // ... resto
+})
+```
+
+## 3️⃣ Push para Deploy
+
+```bash
+git push origin main
+```
+
+**Pronto!** ✅ Site online em ~2 minutos.
+
+---
+
+## 📍 Aonde seu site será publicado?
+
+- **Repo pessoal** (`seu-usuario/seu-usuario.github.io`): `https://seu-usuario.github.io`
+- **Repo de projeto** (`seu-usuario/meu-projeto`): `https://seu-usuario.github.io/meu-projeto`
+
+---
+
+Mais detalhes em [GITHUB_PAGES.md](GITHUB_PAGES.md)

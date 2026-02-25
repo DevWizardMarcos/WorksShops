@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinity School - Aulas do Mês | Março em Belo Horizonte</title>
+  <meta name="description"
+    content="Programação de aulas presenciais da Infinity School em Belo Horizonte. Desenvolvimento, Design, Marketing e Inteligência Artificial.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-background" style="background-image: url('./src/assets/image.png')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Aulas do Mês – Março</h1>
+      <p class="hero-subtitle">Programação presencial em Belo Horizonte</p>
+      <p class="hero-description">Desenvolvimento, Design, Marketing e Inteligência Artificial</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="scrollToSection('programacao')">Ver Programação</button>
+        <button class="btn btn-secondary" onclick="scrollToSection('professores')">Conhecer Professores</button>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2 class="section-title">Formação prática para o mercado real</h2>
+      <p class="section-description">
+        As aulas da Infinity School acontecem presencialmente em Belo Horizonte com professores atuantes no mercado.
+        Nosso conteúdo é prático e aplicado, preparando você para os desafios reais do mercado profissional.
+      </p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="#C41E1E" stroke-width="2" />
+              <path d="M24 12V36M12 24H36" stroke="#C41E1E" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="card-title">Presencial em BH</h3>
+          <p class="card-text">Aulas em sala de aula, com interação direta entre alunos e professores em um ambiente
+            profissional.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="#C41E1E" stroke-width="2" />
+              <path
+                d="M18 28C18 26.9 18.9 26 20 26H28C29.1 26 30 26.9 30 28V32C30 33.1 29.1 34 28 34H20C18.9 34 18 33.1 18 32V28Z"
+                stroke="#C41E1E" stroke-width="2" />
+              <path d="M20 26V20C20 18.9 20.9 18 22 18H26C27.1 18 28 18.9 28 20V26" stroke="#C41E1E" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="card-title">Professores Especialistas</h3>
+          <p class="card-text">Profissionais com experiência real no mercado, trazendo conhecimento atualizado e
+            prático.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="#C41E1E" stroke-width="2" />
+              <path d="M18 20H30V32C30 33.1 29.1 34 28 34H20C18.9 34 18 33.1 18 32V20Z" stroke="#C41E1E"
+                stroke-width="2" />
+              <path d="M22 16H26V20H22V16Z" stroke="#C41E1E" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="card-title">Aprendizado Prático</h3>
+          <p class="card-text">Conteúdo aplicado com projetos reais, preparando você para desafios do mercado
+            profissional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Professores -->
+  <section id="professores" class="professores">
+    <div class="container">
+      <div class="professores-content">
+        <div class="professores-image">
+          <img src="./src/assets/aline.png" alt="Corpo Docente Infinity School">
+        </div>
+
+        <div class="professores-info">
+          <h2 class="section-title">Corpo Docente</h2>
+          <div class="professores-grid">
+            <div class="professor-card">
+              <div class="professor-avatar">MP</div>
+              <h3 class="professor-name">Marcos Paulo</h3>
+              <p class="professor-area">Full Stack Developer | Front-End Specialist</p>
+              <p class="professor-bio"><strong>Especialista em:</strong> React, JavaScript, TypeScript, Python, Git & GitHub, Deploy em produção.<br><br>Domina a arte de criar interfaces deslumbrantes que conquistam usuários. Combina design pixel-perfect com arquitetura backend robusta. Mentor em carreira tech que já transformou centenas de desenvolvedores em profissionais de mercado. Experiência comprovada em startups e empresas TECH escala 0-1.</p>
+              <div class="professor-links">
+                <a href="https://www.linkedin.com/in/marcos-simoes-ms/" title="LinkedIn" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://github.com/DevWizardMarcos" title="GitHub" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="professor-card">
+              <div class="professor-avatar">GS</div>
+              <h3 class="professor-name">Gabriel Souto</h3>
+              <p class="professor-area">Full Stack Developer | Backend Specialist</p>
+              <p class="professor-bio"><strong>Especialista em:</strong> FastAPI, SQLAlchemy, Python, Infraestrutura em nuvem, APIs RESTful, Automações inteligentes.<br><br>Engenheiro backend que domina a construção de sistemas escaláveis e high-performance. Especialista em automações que fazem máquinas trabalhar para você. Instrutor que transforma conceitos complexos em código elegante e funcional. Experiência em landing pages que convertem e sistemas que crescem com seu negócio.</p>
+              <div class="professor-links">
+                <a href="https://www.linkedin.com/in/gabriel-silva-b91943226/" title="LinkedIn" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://github.com/GabrielSouto19" title="GitHub" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="professor-card">
+              <div class="professor-avatar">VP</div>
+              <h3 class="professor-name">Vanderson Pedroso</h3>
+              <p class="professor-area">Design Maestro | 3D Modeling | Marketing</p>
+              <p class="professor-bio"><strong>Especialista em:</strong> Figma avançado, Modelagem 3D, Animation, Brand Identity, Campanhias de impacto visual, Marca pessoal.<br><br>Maestro do design que transforma ideias em identidades visuais irresistíveis. Domina Figma em nível especialista e cria mundos 3D que impressionam. Estrategista em brand que já elevou marcas de zero a referência. Mentor em marca pessoal que ensina como se destacar e monetizar sua expertise no mercado digital.</p>
+              <div class="professor-links">
+                <a href="https://www.linkedin.com/in/vandersonpedroso/" title="LinkedIn" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://behance.net/VanArtist" title="Behance" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+              <div class="professor-card">
+              <div class="professor-avatar">N</div>
+              <h3 class="professor-name">Nickolas</h3>
+              <p class="professor-area">Performance Marketing Specialist</p>
+              <p class="professor-bio"><strong>Especialista em:</strong> Google Ads, Meta Ads, TikTok Ads, Tráfego pago, Otimização de funis, Analytics avançado.<br><br>Mestre em transformar budgets em receita lucrativa. Domina todos os principais canais de tráfego pago e sabe exatamente onde cada centavo gera retorno. Instrutor que decodifica algoritmos de anúncios e ensina a capturar clientes qualificados em escala. Experiência comprovada em lançamentos que geraram 7 dígitos em faturamento.</p>
+              <div class="professor-links">
+                <a href="#" title="LinkedIn" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="professor-card">
+              <div class="professor-avatar">WA</div>
+              <h3 class="professor-name">Walter Alves</h3>
+              <p class="professor-area">Full Stack Developer | Data Scientist</p>
+              <p class="professor-bio"><strong>Especialista em:</strong> Docker, Kubernetes, CI/CD, Python para IA, Machine Learning, análise de dados, deploy em produção.<br><br>Engenheiro que une código impecável com inteligência de dados. Domina infraestrutura cloud em nível enterprise e sabe construir sistemas que escalam globalmente. Especialista em automações inteligentes que economizam milhares de horas. Mentor em DevOps e IA que mostra como tecnologia de ponta resolve problemas reais de negócio.</p>
+              <div class="professor-links">
+                <a href="https://www.linkedin.com/in/walter-alves-636a14219/" title="LinkedIn" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://github.com/Walter-Alves-602" title="GitHub" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="professor-card">
+              <div class="professor-avatar">B</div>
+              <h3 class="professor-name">Marcus o (Barba)</h3>
+              <p class="professor-area">UX/UI Designer | Audiovisual Producer | Marketing</p>
+              <p class="professor-bio"><strong>Especialista em:</strong> UX/UI avançado, Produção audiovisual 4K, Fotografia profissional, React, JavaScript, storytelling visual.<br><br>Designer que cria experiências imersivas do início ao fim. Domina toda a cadeia de valor visual: design, fotografia, vídeo e código. Produtor audiovisual premiado que já criou campanhas viralizadas. Mentor que ensina como criar conteúdo que prende atenção e converte vendas através de narrativas visuais irresistíveis.</p>
+              <div class="professor-links">
+                <a href="https://www.linkedin.com/in/marcusparanhos/" title="LinkedIn" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="professor-card">
+              <div class="professor-avatar">AC</div>
+              <h3 class="professor-name">Ângella Costa</h3>
+              <p class="professor-area">Digital Marketing Strategist | Content Creator</p>
+              <p class="professor-bio"><strong>Especialista em:</strong> Estratégia de conteúdo, Social media, Edição audiovisual profissional, Growth hacking, Community building.<br><br>Estrategista visível que orquestra campanhas que viralizam. Experiência internacional em scaling de marcas do zero ao topo. Maestrina em transformar seguidores em comunidades leais que compram. Mentora que alia teoria de marketing com prática de rua, mostrando exatamente como criar conteúdo que gera engagement real e conversões escaláveis.</p>
+              <div class="professor-links">
+                <a href="https://www.linkedin.com/in/%C3%A2ngella-costa-9733b32ba/" title="LinkedIn"
+                  class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="professor-card">
+              <div class="professor-avatar">AT</div>
+              <h3 class="professor-name">Anderson Teixeira</h3>
+              <p class="professor-area">Marketing Mastermind | International Consultant</p>
+              <p class="professor-bio"><strong>Especialista em:</strong> Estratégia de marketing, Consultoria internacional, Análise comportamental, Funis de conversão, Sales & Marketing.<br><br>Consultor internacional que já estruturou estratégias de marketing para empresas atingirem escala global. Domina a psicologia do consumidor e sabe converter comportamento em receita. Mentor que desvenda os segredos de campanhas que geram leads qualificados em quantidade e mantêm clientes por vida. Experiência comprovada em mercados internacionais e conhecimento pormenorizado do comportamento do consumidor moderno.</p>
+              <div class="professor-links">
+                <a href="https://www.linkedin.com/in/at-andersonteixeira/" title="LinkedIn" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Programação -->
+  <section id="programacao" class="programacao">
+    <div class="container">
+      <h2 class="section-title">Programação – Março</h2>
+
+      <div class="tabs">
+        <button class="tab-button active" data-tab="terca">Terça</button>
+        <button class="tab-button" data-tab="quarta">Quarta</button>
+        <button class="tab-button" data-tab="quinta">Quinta</button>
+        <button class="tab-button" data-tab="sexta">Sexta</button>
+      </div>
+
+      <div class="tab-content active" id="terca">
+        <div class="aulas-grid">
+          <div class="aula-card">
+            <div class="aula-date">03/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Git e GitHub na Prática</h3>
+            <p class="aula-professor">Marcos Paulo</p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">10/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Backend com FastAPI e SQLAlchemy</h3>
+            <p class="aula-professor">Gabriel Souto</p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">17/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Marca Pessoal na Prática</h3>
+            <p class="aula-professor">Vanderson Pedroso</p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">24/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Landing Page que Converte</h3>
+            <p class="aula-professor">Gabriel Souto</p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">31/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Tráfego Pago do Zero</h3>
+            <p class="aula-professor">Nickolas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="quarta">
+        <div class="aulas-grid">
+          <div class="aula-card">
+            <div class="aula-date">25/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">IA para Design e Marketing</h3>
+            <p class="aula-professor">Vanderson Pedroso</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="quinta">
+        <div class="aulas-grid">
+          <div class="aula-card">
+            <div class="aula-date">05/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">SM Figma Avançado</h3>
+            <p class="aula-professor">Vanderson Pedroso</p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">12/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">SM Figma Avançado</h3>
+            <p class="aula-professor">Vanderson Pedroso
+
+            </p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">19/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">SM Figma Avançado</h3>
+            <p class="aula-professor">Vanderson Pedroso
+
+            </p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">26/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">SM Figma Avançado</h3>
+            <p class="aula-professor">Vanderson Pedroso
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="sexta">
+        <div class="aulas-grid">
+          <div class="aula-card">
+            <div class="aula-date">06/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Deploy na Vercel</h3>
+            <p class="aula-professor">Marcos Paulo</p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">13/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Carreira em Marketing</h3>
+            <p class="aula-professor">Vanderson Pedroso
+
+            </p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">20/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Carreira em Design</h3>
+            <p class="aula-professor">Vanderson Pedroso
+
+            </p>
+          </div>
+          <div class="aula-card">
+            <div class="aula-date">27/03</div>
+            <div class="aula-time">19h</div>
+            <h3 class="aula-title">Docker Descomplicado</h3>
+            <p class="aula-professor">Walter Alves </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section id="cta" class="cta">
+    <div class="container">
+      <h2 class="cta-title">Desenvolva sua carreira com a Infinity School</h2>
+      <p class="cta-subtitle">Garanta sua participação nas aulas presenciais em BH</p>
+      <button class="btn btn-cta" onclick="openParticipationModal()">Quero Participar</button>
+    </div>
+  </section>
+
+  <!-- Modal de Participação -->
+  <div id="participationModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeParticipationModal()">×</button>
+      <h2 class="modal-title">Inscrição para Aulas - Infinity School</h2>
+      <p class="modal-subtitle">Preencha seus dados para participar das nossa aulas presenciais</p>
+      
+      <form id="participationForm" class="participation-form">
+        <!-- Informações Pessoais -->
+        <div class="form-section">
+          <h3 class="form-section-title">Seus Dados</h3>
+          
+          <div class="form-group">
+            <label for="participantName">Nome Completo *</label>
+            <input type="text" id="participantName" name="participantName" required placeholder="Digite seu nome">
+          </div>
+
+          <div class="form-group">
+            <label for="participantPhone">Telefone (WhatsApp) *</label>
+            <input type="tel" id="participantPhone" name="participantPhone" required placeholder="(11) 99999-9999">
+          </div>
+
+          <div class="form-group">
+            <label for="participantStatus">Você é aluno? *</label>
+            <select id="participantStatus" name="participantStatus" required>
+              <option value="">Selecione uma opção</option>
+              <option value="aluno">Sim, sou aluno</option>
+              <option value="nao-aluno">Não sou aluno</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Convidados -->
+        <div class="form-section">
+          <h3 class="form-section-title">Convidados</h3>
+          
+          <div class="form-group">
+            <label for="hasGuests">Vai levar convidado(s)? *</label>
+            <select id="hasGuests" name="hasGuests" required onchange="handleGuestStatusChange()">
+              <option value="">Selecione uma opção</option>
+              <option value="sim">Sim, vou levar</option>
+              <option value="nao">Não, vou sozinho</option>
+            </select>
+          </div>
+
+          <!-- Dados de Convidados (oculto por padrão) -->
+          <div id="guestsSection" class="guests-section" style="display: none;">
+            <div class="form-group">
+              <label for="guestCount">Quantos convidados? *</label>
+              <select id="guestCount" name="guestCount" onchange="generateGuestFields()">
+                <option value="">Selecione</option>
+                <option value="1">1 convidado</option>
+                <option value="2">2 convidados</option>
+                <option value="3">3 convidados</option>
+                <option value="4">4 convidados</option>
+                <option value="5">5 convidados</option>
+              </select>
+            </div>
+
+            <!-- Container para campos de convidados dinamicamente gerados -->
+            <div id="guestFieldsContainer"></div>
+          </div>
+        </div>
+
+        <!-- Botão de Envio -->
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" onclick="closeParticipationModal()">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Confirmar Inscrição</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./src/script.js"></script>
+</body>
+
+</html>
