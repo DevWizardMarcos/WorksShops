@@ -38,7 +38,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm vite build
+        run: pnpm run build:pages
         env:
           NODE_ENV: production
 
