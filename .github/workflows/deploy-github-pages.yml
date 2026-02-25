@@ -2,7 +2,8 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "copilot/add-github-workflows"]
+  workflow_dispatch:
 
 permissions:
   contents: read
