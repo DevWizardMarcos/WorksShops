@@ -16,6 +16,8 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
+        with:
+          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -54,3 +56,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Resumo do Deploy
+        run: |
+          echo "## ✅ Deploy concluído com sucesso!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🌐 **Seu site está online em:** ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "👉 [Abrir site](${{ steps.deployment.outputs.page_url }})" >> $GITHUB_STEP_SUMMARY
